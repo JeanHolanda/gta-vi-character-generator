@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bangers", system-ui;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: url('./img/background2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    color: #eb1890;
+    font-size: 360px;
+    text-shadow: 2px 2px #111;
+}
+
+.personage-image {
+    height: 580px;
+    position: absolute;
+    bottom: 0;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    left: 32px;
+    bottom: 45px;
+}
+
+.select-your-personage {
+    color: #ffd319;
+    font-size: 22px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.rule-description {
+    color: #fff;
+    font-size: 14px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    gap: 7px;
+}
+
+.button-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    cursor: pointer;
+
+    img {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+    }
+}
+
+.button-images:hover {
+    opacity: .93;
+}
+
+#lucia-button {
+    background-color: #eb1890;
+}
+
+#jason-button {
+    background-color: #2ecafe;
+}
+
+#cj-button {
+    background-color: #00FA9A;
+}
+
+#you-button {
+    height: 65px;
+    width: 65px;
+    background-color: #ffd319;
+    font-size: 18px;
+    border: none;
+}
+
+@media screen and (max-width: 850px) {
+    .name {
+        font-size: 280px;
+        position: absolute;
+        top: 20px;
+    }
+
+    .personage-image {
+        height: 520px;
+    }
+
+    .select-your-personage {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .rule-description {
+        max-width: 150px;
+        font-size: 12px;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .name {
+        font-size: 220px;
+        top: 60px;
+    }
+
+    .description {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .name {
+        font-size: 160px;
+        top: 120px;
+    }
+
+    .personage-image {
+        height: 480px;
+    }
+}

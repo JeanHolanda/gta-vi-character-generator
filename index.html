@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>GTA VI</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="name">Lucia</h1>
+        <img class="personage-image" src="./img/lucia.png" alt="imagem-do-personagem">
+    </section>
+
+    <div class="description">
+        <p class="select-your-personage">Selecione seu personagem</p>
+        <h2>Não é só <br>um jogo.</h2>
+        <p class="rule-description">Escolha uma lenda de Dev City. Ou tire uma selfie <br>e vire uma.</p>
+    </div>
+
+    <div class="buttons">
+        <button type="button" class="button-images" id="lucia-button" value="lucia"><img src="./img/lucia.png" alt="Lucia character"></button>
+        <button type="button" class="button-images" id="jason-button" value="jason"><img src="./img/jason.png" alt="Jason character"></button>
+        <button type="button" class="button-images" id="cj-button" value="cj"><img src="./img/cj.png" alt="CJ character"></button>
+        <label class="button-images" id="you-button">📸<br>Você
+            <input type="file" accept="image/*" hidden onchange="yourPersonage(this)">
+        </label>
+    </div>
+</body>
+<script src="https://js.puter.com/v2/"></script>
+<script src="./scripts.js"></script>
+</html>
