@@ -15,6 +15,8 @@ function changePersonage(name, color, src) {
 
 function yourPersonage(photo) {
 
+    alert("🎨 Como funciona:\nAo enviar sua foto, uma janelinha do serviço gratuito Puter.com poderá abrir pedindo autorização.\n\nBasta autorizar (ou entrar com o Google) para a IA desenhar seu personagem!")
+
     const onloadText = document.querySelector('.select-your-personage')
     onloadText.innerHTML = 'A IA está te desenhando...🎨'
 
