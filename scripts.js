@@ -1,6 +1,7 @@
 const luciaButton = document.querySelector('#lucia-button')
 const jasonButton = document.querySelector('#jason-button')
 const cjButton = document.querySelector('#cj-button')
+const youButton = document.querySelector('#you-button')
 
 function changePersonage(name, color, src) {
 
@@ -17,6 +18,8 @@ function yourPersonage(photo) {
     const onloadText = document.querySelector('.select-your-personage')
     onloadText.innerHTML = 'A IA está te desenhando...🎨'
 
+    youButton.style.pointerEvents = 'none'
+    youButton.style.opacity = '0.5'
 
     let leitor = new FileReader()
     leitor.readAsDataURL(photo.files[0])
@@ -37,9 +40,10 @@ function yourPersonage(photo) {
             alert('Não foi possível gerar seu personagem. Tente novamente')
         }
         onloadText.innerHTML = 'Selecione seu personagem'
+
+        youButton.style.pointerEvents = 'auto'
+        youButton.style.opacity = '1'
     }
-
-
 }
 
 luciaButton.addEventListener('click', (() => changePersonage('lucia', '#eb1890', './img/lucia.png')))
